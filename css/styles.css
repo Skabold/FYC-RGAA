@@ -57,7 +57,7 @@ main h2 {
     margin-bottom: 2rem;
 }
 
-article {
+.preview {
     background: #fff;
     margin: 1rem auto;
     padding: 1rem;
@@ -69,30 +69,29 @@ article {
     gap: 1rem;
 }
 
-article img {
+.preview img {
     width: 150px;
     height: auto;
     border-radius: 8px;
 }
 
-article h3 {
+.preview h3 {
     margin: 0 0 0.5rem;
     font-size: 1.5rem;
     color: #333;
 }
 
-article p {
+.preview p {
     margin: 0 0 1rem;
 }
 
-article a {
+.preview a {
     text-decoration: none;
     color: #556B2F;
-    /* Vert olive */
     font-weight: bold;
 }
 
-article a:hover {
+.preview a:hover {
     text-decoration: underline;
 }
 
