@@ -10,7 +10,8 @@ body {
 
 /* En-tête */
 header {
-    background-color: #ff6f61;
+    background-color: #556B2F;
+    /* Vert olive */
     color: #fff;
     padding: 1rem 2rem;
     text-align: center;
@@ -51,7 +52,8 @@ main {
 main h2 {
     text-align: center;
     font-size: 2rem;
-    color: #ff6f61;
+    color: #556B2F;
+    /* Vert olive */
     margin-bottom: 2rem;
 }
 
@@ -85,7 +87,8 @@ article p {
 
 article a {
     text-decoration: none;
-    color: #ff6f61;
+    color: #556B2F;
+    /* Vert olive */
     font-weight: bold;
 }
 
@@ -102,10 +105,243 @@ footer {
 }
 
 footer a {
-    color: #ff6f61;
+    color: #F0F4E3;
+    /* Vert olive */
     text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Styles pour le formulaire */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form fieldset {
+    border: 1px solid #6B8E23;
+    /* Vert olive */
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+form legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #6B8E23;
+    padding: 0 0.5rem;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin: 0.5rem 0 0.3rem;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+form p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form button {
+    background-color: #6B8E23;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #558017;
+    /* Vert olive légèrement foncé */
+}
+
+/* Section générale */
+main h2 {
+    text-align: center;
+    color: #6B8E23;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Styles pour le tableau */
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table thead {
+    background-color: #6B8E23;
+    /* Vert olive foncé */
+    color: #fff;
+}
+
+table th,
+table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+table tbody tr:hover {
+    background-color: #F0F4E3;
+    /* Vert olive pâle */
+}
+
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Styles pour le graphique */
+section figure {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+section figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section figure figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+    font-style: italic;
+}
+
+/* Section générale */
+section {
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+}
+
+section h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #6B8E23;
+    margin-bottom: 1rem;
+}
+
+/* Article */
+article {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    font-size: 2rem;
+    color: #6B8E23;
+    margin-bottom: 1rem;
+}
+
+article p,
+article ul,
+article ol {
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+article ul {
+    list-style: disc;
+    padding-left: 2rem;
+}
+
+article ol {
+    list-style: decimal;
+    padding-left: 2rem;
+}
+
+article figure {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+article figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+article figure figcaption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+article video {
+    display: block;
+    max-width: 100%;
+    margin: 1rem auto;
+    border-radius: 8px;
+}
+
+/* Titres de section */
+article h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 1.5rem;
+}
+
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    background: #fff;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+.skip-link:focus-within {
+    top: 0;
+    left: 0;
 }

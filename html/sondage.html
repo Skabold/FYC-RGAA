@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sondage culinaire : Partagez vos goûts et préférences sur la cuisine.">
+    <title>Délices & Gourmandises - Sondage</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Délices & Gourmandises</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="sondage.html">Sondage</a></li>
+                <li><a href="tableau.html">Tableau & Graphique</a></li>
+                <li><a href="article1.html">Articles</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Participez à notre sondage culinaire !</h2>
+        <form action="#" method="post">
+            <!-- Informations personnelles -->
+            <fieldset>
+                <legend>Informations personnelles</legend>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required aria-required="true" placeholder="Entrez votre nom">
+
+                <label for="age">Âge :</label>
+                <input type="number" id="age" name="age" min="1" max="120" required aria-required="true"
+                    placeholder="Entrez votre âge">
+            </fieldset>
+
+            <!-- Préférences culinaires -->
+            <fieldset>
+                <legend>Vos préférences culinaires</legend>
+                <label for="favorite-dish">Plat préféré :</label>
+                <input type="text" id="favorite-dish" name="favorite-dish" placeholder="Entrez le nom d'un plat">
+
+                <label for="cuisine">Cuisine préférée :</label>
+                <select id="cuisine" name="cuisine">
+                    <option value="française">Française</option>
+                    <option value="italienne">Italienne</option>
+                    <option value="asiatique">Asiatique</option>
+                    <option value="mexicaine">Mexicaine</option>
+                    <option value="autre">Autre</option>
+                </select>
+
+                <p>Types de plats que vous aimez :</p>
+                <label><input type="checkbox" name="dish-type" value="entrée"> Entrées</label>
+                <label><input type="checkbox" name="dish-type" value="plat"> Plats principaux</label>
+                <label><input type="checkbox" name="dish-type" value="dessert"> Desserts</label>
+            </fieldset>
+
+            <!-- Habitudes alimentaires -->
+            <fieldset>
+                <legend>Habitudes alimentaires</legend>
+                <p>À quelle fréquence cuisinez-vous ?</p>
+                <label><input type="radio" name="frequency" value="quotidien" required aria-required="true"> Tous les
+                    jours</label>
+                <label><input type="radio" name="frequency" value="hebdomadaire"> Une fois par semaine</label>
+                <label><input type="radio" name="frequency" value="mensuel"> Une fois par mois</label>
+                <label><input type="radio" name="frequency" value="rare"> Rarement</label>
+            </fieldset>
+
+            <!-- Soumettre -->
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Délices & Gourmandises. Tous droits réservés.</p>
+        <a href="accessibilite.html">Accessibilité</a>
+    </footer>
+</body>
+
+</html>
