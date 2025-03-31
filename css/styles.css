@@ -167,7 +167,7 @@ form p {
 }
 
 form button {
-    background-color: #6B8E23;
+    background-color: #556B2F;
     color: #fff;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -178,7 +178,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #558017;
+    background-color: #4a5e29;
     /* Vert olive légèrement foncé */
 }
 
@@ -204,7 +204,7 @@ table {
 }
 
 table thead {
-    background-color: #6B8E23;
+    background-color: #556B2F;
     /* Vert olive foncé */
     color: #fff;
 }
@@ -223,7 +223,6 @@ table th {
 
 table tbody tr:hover {
     background-color: #F0F4E3;
-    /* Vert olive pâle */
 }
 
 table tbody tr:last-child td {
@@ -343,4 +342,11 @@ article h3 {
 .skip-link:focus-within {
     top: 0;
     left: 0;
+}
+
+/* Ajouter un astérisque rouge aux labels des champs required */
+label.required::after {
+    content: " *";
+    color: red;
+    font-weight: bold;
 }

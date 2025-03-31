@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez un tableau et un graphique culinaire.">
+    <title>Précédent sondage - Délices & Gourmandises</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <nav class="skip-link" tabindex="0">
+        <a href="#main">Contenu</a>
+        <a href="#footer">Pied de page</a>
+    </nav>
+
+    <header>
+        <h1>Délices & Gourmandises</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="sondage.html">Sondage</a></li>
+                <li><a href="precedentsondage.html">Précédent sondage</a></li>
+                <li><a href="articles.html">Articles</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <h2>Résultats du précédent sondage</h2>
+        <article>
+            <section>
+                <h3>Répartition des catégories alimentaires</h3>
+                <p>Voici les résultats d'un ancien sondage sur les habitudes alimentaires de notre communauté. Ce graphique montre comment les participants répartissent leur consommation entre différentes catégories alimentaires au quotidien.</p>
+                
+                <figure>
+                    <section aria-labelledby="categoriesGraph">
+                        <div>
+                            <label for="legumes">Légumes (30%)</label>
+                            <meter id="legumes" value="0.3" min="0" max="1"></meter>
+                        </div>
+                        <div>
+                            <label for="poissons">Poissons (20%)</label>
+                            <meter id="poissons" value="0.2" min="0" max="1"></meter>
+                        </div>
+                        <div>
+                            <label for="desserts">Desserts (15%)</label>
+                            <meter id="desserts" value="0.15" min="0" max="1"></meter>
+                        </div>
+                        <div>
+                            <label for="fruits">Fruits (25%)</label>
+                            <meter id="fruits" value="0.25" min="0" max="1"></meter>
+                        </div>
+                        <div>
+                            <label for="viandes">Viandes (10%)</label>
+                            <meter id="viandes" value="0.1" min="0" max="1"></meter>
+                        </div>
+                    </section>
+    
+                    <figcaption id="categoriesGraph">Répartition des catégories alimentaires basées sur un ancien sondage sur les habitudes alimentaires.</figcaption>
+                </figure>
+            </section>
+        </article>
+    </main>
+        
+    
+    <footer id="footer">
+        <p>&copy; 2024 Délices & Gourmandises. Tous droits réservés.</p>
+        <a href="accessibilite.html">Accessibilité : Non-conforme</a>
+    </footer>
+</body>
+
+</html>

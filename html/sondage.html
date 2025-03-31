@@ -5,44 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sondage culinaire : Partagez vos goûts et préférences sur la cuisine.">
-    <title>Délices & Gourmandises - Sondage</title>
+    <title>Sondage - Délices & Gourmandises</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
+    <nav class="skip-link" tabindex="0">
+        <a href="#main">Contenu</a>
+        <a href="#footer">Pied de page</a>
+    </nav>
+
     <header>
         <h1>Délices & Gourmandises</h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Accueil</a></li>
                 <li><a href="sondage.html">Sondage</a></li>
-                <li><a href="tableau.html">Tableau & Graphique</a></li>
+                <li><a href="precedentsondage.html">Précédent sondage</a></li>
                 <li><a href="articles.html">Articles</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="main">
         <h2>Participez à notre sondage culinaire !</h2>
         <form action="#" method="post">
             <!-- Informations personnelles -->
             <fieldset>
                 <legend>Informations personnelles</legend>
-                <label for="name">Nom :</label>
+                <label class="required" for="name">Nom :</label>
                 <input type="text" id="name" name="name" required aria-required="true" placeholder="Entrez votre nom">
 
-                <label for="age">Âge :</label>
-                <input type="number" id="age" name="age" min="1" max="120" required aria-required="true"
-                    placeholder="Entrez votre âge">
+                <label class="required" for="age">Âge :</label>
+                <input type="number" id="age" name="age" min="1" max="120" required aria-required="true" placeholder="Entrez votre âge">
             </fieldset>
 
             <!-- Préférences culinaires -->
             <fieldset>
                 <legend>Vos préférences culinaires</legend>
-                <label for="favorite-dish">Plat préféré :</label>
-                <input type="text" id="favorite-dish" name="favorite-dish" placeholder="Entrez le nom d'un plat">
+                <label class="required" for="favorite-dish">Plat préféré :</label>
+                <input type="text" id="favorite-dish" name="favorite-dish" required placeholder="Entrez le nom d'un plat">
 
-                <label for="cuisine">Cuisine préférée :</label>
-                <select id="cuisine" name="cuisine">
+                <label class="required" for="cuisine">Cuisine préférée :</label>
+                <select id="cuisine" name="cuisine" required>
                     <option value="française">Française</option>
                     <option value="italienne">Italienne</option>
                     <option value="asiatique">Asiatique</option>
@@ -59,9 +63,8 @@
             <!-- Habitudes alimentaires -->
             <fieldset>
                 <legend>Habitudes alimentaires</legend>
-                <p>À quelle fréquence cuisinez-vous ?</p>
-                <label><input type="radio" name="frequency" value="quotidien" required aria-required="true"> Tous les
-                    jours</label>
+                <label class="required">À quelle fréquence cuisinez-vous ?</label>
+                <label><input type="radio" name="frequency" value="quotidien" required aria-required="true"> Tous les jours</label>
                 <label><input type="radio" name="frequency" value="hebdomadaire"> Une fois par semaine</label>
                 <label><input type="radio" name="frequency" value="mensuel"> Une fois par mois</label>
                 <label><input type="radio" name="frequency" value="rare"> Rarement</label>
@@ -71,9 +74,9 @@
             <button type="submit">Envoyer</button>
         </form>
     </main>
-    <footer>
+    <footer id="footer">
         <p>&copy; 2024 Délices & Gourmandises. Tous droits réservés.</p>
-        <a href="accessibilite.html">Accessibilité</a>
+        <a href="accessibilite.html">Accessibilité : Non-conforme</a>
     </footer>
 </body>
 
