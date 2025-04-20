@@ -21,7 +21,7 @@
             <ul>
                 <li><a href="../index.html">Accueil</a></li>
                 <li><a href="sondage.html">Sondage</a></li>
-                <li><a href="precedentsondage.html">Précédent sondage</a></li>
+                <li><a href="precedent-sondage.html">Précédent sondage</a></li>
                 <li><a href="articles.html">Articles</a></li>
             </ul>
         </nav>
@@ -36,14 +36,16 @@
                 <input type="text" id="name" name="name" required aria-required="true" placeholder="Entrez votre nom">
 
                 <label class="required" for="age">Âge :</label>
-                <input type="number" id="age" name="age" min="1" max="120" required aria-required="true" placeholder="Entrez votre âge">
+                <input type="number" id="age" name="age" min="1" max="120" required aria-required="true"
+                    placeholder="Entrez votre âge">
             </fieldset>
 
             <!-- Préférences culinaires -->
             <fieldset>
                 <legend>Vos préférences culinaires</legend>
                 <label class="required" for="favorite-dish">Plat préféré :</label>
-                <input type="text" id="favorite-dish" name="favorite-dish" required placeholder="Entrez le nom d'un plat">
+                <input type="text" id="favorite-dish" name="favorite-dish" required
+                    placeholder="Entrez le nom d'un plat">
 
                 <label class="required" for="cuisine">Cuisine préférée :</label>
                 <select id="cuisine" name="cuisine" required>
@@ -64,7 +66,8 @@
             <fieldset>
                 <legend>Habitudes alimentaires</legend>
                 <label class="required">À quelle fréquence cuisinez-vous ?</label>
-                <label><input type="radio" name="frequency" value="quotidien" required aria-required="true"> Tous les jours</label>
+                <label><input type="radio" name="frequency" value="quotidien" required aria-required="true"> Tous les
+                    jours</label>
                 <label><input type="radio" name="frequency" value="hebdomadaire"> Une fois par semaine</label>
                 <label><input type="radio" name="frequency" value="mensuel"> Une fois par mois</label>
                 <label><input type="radio" name="frequency" value="rare"> Rarement</label>
@@ -72,11 +75,16 @@
 
             <!-- Soumettre -->
             <button type="submit">Envoyer</button>
+            <p class="form-legend"><span class="required-star">*</span> Champs obligatoires</p>
         </form>
     </main>
     <footer id="footer">
         <p>&copy; 2024 Délices & Gourmandises. Tous droits réservés.</p>
-        <a href="accessibilite.html">Accessibilité : Non-conforme</a>
+        <a href="accessibilite.html">Accessibilité : Non-conforme</a> |
+        <a href="plan-du-site.html">Plan du site</a> |
+        <a href="https://www.instagram.com/esginformatique/" target="_blank" rel="noopener noreferrer">
+            <img src="../images/instagram-logo.png" alt="Instagram" width="24" height="24">
+        </a>
     </footer>
 </body>
 
