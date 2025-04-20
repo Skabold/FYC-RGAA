@@ -343,13 +343,6 @@ article h3 {
     left: 0;
 }
 
-/* Ajouter un astérisque rouge aux labels des champs required */
-label.required::after {
-    content: " *";
-    color: red;
-    font-weight: bold;
-}
-
 /* Styles pour la légende du formulaire */
 .form-legend {
     font-size: 0.9rem;
@@ -357,9 +350,4 @@ label.required::after {
     margin-top: 1rem;
     text-align: right;
     font-style: italic;
-}
-
-.required-star {
-    color: red;
-    font-weight: bold;
 }

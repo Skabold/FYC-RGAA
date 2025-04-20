@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -32,35 +31,32 @@
             <!-- Informations personnelles -->
             <fieldset>
                 <legend>Informations personnelles</legend>
-                <label class="required" for="name">Nom :</label>
+                <label class="required" for="name">Nom : <b style="color: red;">*</b></label>
                 <input type="text" id="name" name="name" required aria-required="true" placeholder="Entrez votre nom">
 
-                <label class="required" for="age">Âge :</label>
                 <input type="number" id="age" name="age" min="1" max="120" required aria-required="true"
                     placeholder="Entrez votre âge">
             </fieldset>
 
             <!-- Préférences culinaires -->
-            <fieldset>
-                <legend>Vos préférences culinaires</legend>
-                <label class="required" for="favorite-dish">Plat préféré :</label>
-                <input type="text" id="favorite-dish" name="favorite-dish" required
-                    placeholder="Entrez le nom d'un plat">
 
-                <label class="required" for="cuisine">Cuisine préférée :</label>
-                <select id="cuisine" name="cuisine" required>
-                    <option value="française">Française</option>
-                    <option value="italienne">Italienne</option>
-                    <option value="asiatique">Asiatique</option>
-                    <option value="mexicaine">Mexicaine</option>
-                    <option value="autre">Autre</option>
-                </select>
+            <legend>Vos préférences culinaires</legend>
+            <input type="text" id="favorite-dish" name="favorite-dish" required placeholder="Entrez le nom d'un plat">
 
-                <p>Types de plats que vous aimez :</p>
-                <label><input type="checkbox" name="dish-type" value="entrée"> Entrées</label>
-                <label><input type="checkbox" name="dish-type" value="plat"> Plats principaux</label>
-                <label><input type="checkbox" name="dish-type" value="dessert"> Desserts</label>
-            </fieldset>
+            <label class="required" for="cuisine">Cuisine préférée :</label>
+            <select id="cuisine" name="cuisine" required>
+                <option value="française">Française</option>
+                <option value="italienne">Italienne</option>
+                <option value="asiatique">Asiatique</option>
+                <option value="mexicaine">Mexicaine</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <p>Types de plats que vous aimez :</p>
+            <label><input type="checkbox" name="dish-type" value="entrée"> Entrées</label>
+            <label><input type="checkbox" name="dish-type" value="plat"> Plats principaux</label>
+            <label><input type="checkbox" name="dish-type" value="dessert"> Desserts</label>
+
 
             <!-- Habitudes alimentaires -->
             <fieldset>
@@ -74,8 +70,7 @@
             </fieldset>
 
             <!-- Soumettre -->
-            <button type="submit">Envoyer</button>
-            <p class="form-legend"><span class="required-star">*</span> Champs obligatoires</p>
+            <button type="submit">OK</button>
         </form>
     </main>
     <footer id="footer">
