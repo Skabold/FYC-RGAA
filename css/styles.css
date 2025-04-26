@@ -360,6 +360,6 @@ label.required::after {
 }
 
 .required-star {
-    color: red;
+    color: black;
     font-weight: bold;
 }
